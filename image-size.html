@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Size</title>
+    <style>
+        div{
+            background: url('squirtle.png') no-repeat;
+            background-size: 100% 100%;
+            width: 250px;
+            height: 150px;
+        }
+
+
+        @media only screen
+        and (min-width: 650px){
+            div{
+                background: url('wartortle.png') no-repeat;
+                background-size: 100% 100%;
+                width: 250px;
+                height: 150px;
+            }
+        }
+
+        @media only screen
+        and (min-width: 850px){
+            div{
+                background: url('blastoise.png') no-repeat;
+                background-size: 100% 100%;
+                width: 350px;
+                height: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Change the window size to see the image change between large, medium, and small.</h1>
+</header>
+<div>
+</div>
+</body>
+</html>
