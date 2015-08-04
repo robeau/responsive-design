@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+    <style>
+        img{
+            display: block;
+            margin: 0;
+            height: 60vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Change the window size to see the image change between large, medium, and small.</h1>
+    </header>
+    <picture>
+        <source srcset="blastoise.png" media="(min-width: 850px)"/>
+        <source srcset="wartortle.png" media="(min-width: 650px)" />
+        <img src="squirtle.png" />
+    </picture>
+</body>
+</html>

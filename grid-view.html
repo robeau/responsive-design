@@ -24,21 +24,21 @@
             width: 100%;
         }
 
-        .col-1 { width: 8.33%;}
-        .col-2 { width: 16.66%;}
-        .col-3 { width: 25%;}
-        .col-4 { width: 33.33%;}
-        .col-5 { width: 41.66%;}
-        .col-6 { width: 50%;}
-        .col-7 { width: 58.33%;}
-        .col-8 { width: 66.66%;}
-        .col-9 { width: 75%;}
-        .col-10 { width: 83.33%;}
-        .col-11 { width: 91.66%;}
-        .col-12 { width: 100%;}
+        .col-m-1 { width: 8.33%;}
+        .col-m-2 { width: 16.66%;}
+        .col-m-3 { width: 25%;}
+        .col-m-4 { width: 33.33%;}
+        .col-m-5 { width: 41.66%;}
+        .col-m-6 { width: 50%;}
+        .col-m-7 { width: 58.33%;}
+        .col-m-8 { width: 66.66%;}
+        .col-m-9 { width: 75%;}
+        .col-m-10 { width: 83.33%;}
+        .col-m-11 { width: 91.66%;}
+        .col-m-12 { width: 100%;}
 
         @media only screen
-        and (max-device-width: 700px){
+        and (min-device-width: 500px){
             .col-t-1 { width: 8.33%;}
             .col-t-2 { width: 16.66%;}
             .col-t-3 { width: 25%;}
@@ -53,21 +53,20 @@
             .col-t-12 { width: 100%;}
         }
 
-
         @media only screen
-        and (max-device-width: 300px){
-            .col-m-1 { width: 8.33%;}
-            .col-m-2 { width: 16.66%;}
-            .col-m-3 { width: 25%;}
-            .col-m-4 { width: 33.33%;}
-            .col-m-5 { width: 41.66%;}
-            .col-m-6 { width: 50%;}
-            .col-m-7 { width: 58.33%;}
-            .col-m-8 { width: 66.66%;}
-            .col-m-9 { width: 75%;}
-            .col-m-10 { width: 83.33%;}
-            .col-m-11 { width: 91.66%;}
-            .col-m-12 { width: 100%;}
+        and (min-device-width: 800px){
+            .col-1 { width: 8.33%;}
+            .col-2 { width: 16.66%;}
+            .col-3 { width: 25%;}
+            .col-4 { width: 33.33%;}
+            .col-5 { width: 41.66%;}
+            .col-6 { width: 50%;}
+            .col-7 { width: 58.33%;}
+            .col-8 { width: 66.66%;}
+            .col-9 { width: 75%;}
+            .col-10 { width: 83.33%;}
+            .col-11 { width: 91.66%;}
+            .col-12 { width: 100%;}
         }
 
         ul{
@@ -90,12 +89,9 @@
             height: auto;
         }
 
-        #image{
-            background: url('billiards.jpg') no-repeat;
-            background-size: contain;
-            width: 100%;
-            height: 200px;
-            border: 1px solid blue;
+        img{
+            display: block;
+            margin: 0 auto;
         }
 
         #sidebar{
@@ -116,9 +112,21 @@
         </ul>
     </div>
     <div class="col-6 col-m-12 col-t-9">
-        <div id="image"></div>
+        <picture>
+            <source srcset="blastoise.png" media="(min-device-width: 800px)"/>
+            <source srcset="wartortle.png" media="(min-device-width: 500px)" />
+            <img src="squirtle.png" />
+        </picture>
     </div>
-    <div id="sidebar" class="col-3 col-m-12 col-t-12">sidebar</div>
+    <div id="sidebar" class="col-3 col-m-12 col-t-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at odio tempus, hendrerit sapien sit amet, pellentesque turpis. Aenean vitae enim a justo elementum maximus. Sed dui urna, lacinia bibendum tempor sed, ultrices id mi. Pellentesque commodo nisi accumsan risus congue, sit amet faucibus massa aliquet. Aliquam condimentum ut ex venenatis malesuada. In hac habitasse platea dictumst. In commodo justo ipsum, id faucibus nibh suscipit eget. Donec pharetra nulla id sapien ornare pretium. Etiam maximus pharetra pellentesque. Nullam porttitor dolor vel risus cursus, vitae suscipit quam pretium. Aliquam placerat sollicitudin lorem. Proin blandit feugiat feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ut luctus nulla. Vestibulum ut cursus leo.
+
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum sollicitudin massa vel mattis dignissim. Donec risus ipsum, ullamcorper tincidunt dignissim et, suscipit id erat. Etiam viverra ligula et enim molestie fermentum. Sed ac posuere felis. Maecenas vestibulum finibus pulvinar. Aenean finibus, ligula eget tristique tincidunt, tortor dui euismod ipsum, ut placerat lectus risus vel dolor. Aliquam consectetur metus eu eleifend luctus. Sed ac consequat nisl. Ut sagittis elit eget elit tincidunt mattis. Donec placerat sit amet lorem ac aliquam. Nulla varius imperdiet sem et malesuada. Sed a finibus ex. Ut ac sapien vulputate purus bibendum malesuada id finibus lorem.
+
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec molestie nisl. Praesent sollicitudin hendrerit commodo. Cras rhoncus nunc tincidunt purus porttitor mollis. Quisque volutpat at mauris in rutrum. Ut ac tortor suscipit, pretium risus eu, suscipit risus. Nam porttitor dictum nibh nec lobortis. Morbi nulla turpis, sollicitudin ut vehicula ut, scelerisque a nulla. Praesent consequat purus sapien, id eleifend quam pharetra sit amet. Nam pharetra iaculis lobortis. Curabitur ultrices, nibh non hendrerit aliquet, justo dui lobortis odio, eget dictum orci leo sit amet arcu. Integer leo ex, rhoncus eu velit ac, pellentesque facilisis risus.
+
+        Nullam aliquet tortor sed ipsum dictum, ac pharetra neque pharetra. Mauris at odio vel risus bibendum vulputate sed ut mi. Vivamus commodo sed enim vel convallis. Aliquam non felis massa. Proin ligula sapien, dapibus eget vestibulum sit amet, lobortis at orci. Sed vel turpis vitae risus faucibus sodales. Etiam felis ligula, placerat sed augue sed, tempor ornare augue. Cras condimentum enim vitae augue semper, ut convallis ex sagittis. Donec lorem turpis, facilisis id velit sit amet, rhoncus tincidunt tortor. Etiam facilisis justo ac ante accumsan feugiat.
+
+        Phasellus quis ex at turpis cursus eleifend in ut sapien. Maecenas tempor ex vitae consectetur feugiat. Vestibulum placerat porttitor metus, et euismod ex. Nunc et scelerisque elit. Nullam sed nibh molestie, tempor tellus non, fermentum risus. Vestibulum auctor placerat sem ac ullamcorper. In nec gravida massa, non egestas nisi. Donec et purus hendrerit, fringilla nunc id, ornare erat. Suspendisse mi mauris, viverra at augue eget, consectetur volutpat turpis. Aenean faucibus, magna quis ornare cursus, turpis nulla vulputate ex, id bibendum massa mauris id nibh. Etiam non tempor metus. In commodo, elit sit amet ornare elementum, turpis lorem commodo tellus, sit amet volutpat justo elit id ligula. In rutrum orci dui, eleifend consectetur velit maximus et.</div>
 </div>
 </body>
 </html>
